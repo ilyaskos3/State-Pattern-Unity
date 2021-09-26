@@ -32,7 +32,7 @@ public class MouseClickInput : MonoBehaviour
     {
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out _hitInfo, 50))
+        if (Physics.Raycast(ray, out _hitInfo, 200))
         {
             Debug.Log("Hitted: " + _hitInfo.transform.name + " to: " + _hitInfo.point);
         }

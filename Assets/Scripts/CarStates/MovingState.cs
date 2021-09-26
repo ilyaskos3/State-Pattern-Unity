@@ -8,7 +8,7 @@ public class MovingState : IState
     
     private Color _startingBoxColor;
     private Color _boxColor = Color.red;
-    private float minDistance = .3f;
+    private float minDistance = 2.5f;
     
     public MovingState(CarController carController, Material boxMat, Rigidbody rb)
     {
@@ -19,7 +19,7 @@ public class MovingState : IState
 
     public void Enter()
     {
-        Debug.Log("STATE - Search");
+        Debug.Log("STATE - Move");
         _startingBoxColor = _boxMat.color;
         _boxMat.color = _boxColor;
     }
